@@ -50,7 +50,7 @@ def generador_trafico(modo="poisson", tasa=1.0):
         print("No hay IDs disponibles. Verifica si el scraper insertó eventos.")
         return
 
-    print(f"🚦 Iniciando tráfico con modo: {modo}")
+    print(f"Iniciando tráfico con modo: {modo}")
 
     while True:
         try:
