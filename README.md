@@ -11,10 +11,24 @@ Este proyecto implementa un sistema distribuido que recolecta, almacena y analiz
 
 ---
 
-## 1. Scraper
+## Uso con Docker
 
-Este módulo se conecta a la **API Waze Live Map** para extraer información geoespacial de usuarios y eventos en la Región Metropolitana de Santiago, Chile.
+### 1. Levantar todos los servicios
+docker compose up --build
 
-- Extrae datos cada 5 segundos.
-- Guarda los eventos en MongoDB.
-- Objetivo: recolectar **10.000 eventos**.
+### 2. Verificar que MongoDB esté funcionando
+docker exec -it mongo-storage mongosh
+
+### 3. Ya dentro del shell de MongoDB, poner el siguiente comando:
+use waze_db
+db.eventos.count()
+
+### 4. Ver logs del generador de tráfico dentro de la carpeta traffic
+cd traffic
+docker logs -f traffic_generator
+
+### 5. Ver estadísticas del sistema de caché(Se mostrará la tasa de hits, de miss y cuanto es el tamaño actual del caché).
+http://localhost:5001/metrics 
+
+### 6. Parar todos los servicios
+docker compose down
