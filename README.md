@@ -2,12 +2,7 @@
 
 ## Descripción General
 
-Este proyecto implementa un sistema distribuido que recolecta, almacena y analiza eventos de tráfico en tiempo real desde la plataforma Waze. El sistema está dividido en **cuatro módulos principales**, que se comunican de manera secuencial:
-
-1. Scraper
-2. Almacenamiento (MongoDB)
-3. Generador de Tráfico
-4. Sistema de Caché
+Este proyecto forma parte del curso de Sistemas Distribuidos (2025-1) y busca desarrollar una plataforma basada en datos colaborativos obtenidos desde Waze para monitorear y analizar el tráfico en la Región Metropolitana de Santiago. La implementación considera un enfoque modular que incluye componentes de scraping, almacenamiento, generación de tráfico sintético y caching. El sistema se ejecuta en contenedores Docker y está diseñado para ser escalable, tolerante a fallos y extensible a otras regiones. Esta entrega corresponde al primer módulo: Datos y Cache, enfocado en la recolección y gestión eficiente de eventos de tráfico.
 
 ---
 
