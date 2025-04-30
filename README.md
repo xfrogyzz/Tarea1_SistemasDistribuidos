@@ -21,6 +21,7 @@ docker exec -it mongo-storage mongosh
 
 ### 3. Ya dentro del shell de MongoDB, poner el siguiente comando:
 use waze_db
+
 db.eventos.count()
 
 ### 4. Ver logs del generador de tráfico dentro de la carpeta traffic
