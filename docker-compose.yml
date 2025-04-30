@@ -23,7 +23,7 @@ services:
     ports:
       - "5001:5001"
     environment:
-      - CACHE_SIZE=8
+      - CACHE_SIZE=15
       - POLICY=LRU
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:5001/metrics"]
