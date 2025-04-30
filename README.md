@@ -2,7 +2,7 @@
 
 ## Descripción General
 
-Este proyecto forma parte del curso de Sistemas Distribuidos (2025-1) y busca desarrollar una plataforma basada en datos colaborativos obtenidos desde Waze para monitorear y analizar el tráfico en la Región Metropolitana de Santiago. La implementación considera un enfoque modular que incluye componentes de scraping, almacenamiento, generación de tráfico sintético y caching. El sistema se ejecuta en contenedores Docker y está diseñado para ser escalable, tolerante a fallos y extensible a otras regiones. Esta entrega corresponde al primer módulo: Datos y Cache, enfocado en la recolección y gestión eficiente de eventos de tráfico.
+Este proyecto busca desarrollar una plataforma basada en datos colaborativos obtenidos desde Waze para monitorear y analizar el tráfico en la Región Metropolitana de Santiago. La implementación considera un enfoque modular que incluye componentes de scraping, almacenamiento, generación de tráfico sintético y caching. El sistema se ejecuta en contenedores Docker y está diseñado para ser escalable, tolerante a fallos y extensible a otras regiones. Enfocado en la recolección y gestión eficiente de eventos de tráfico.
 
 ---
 
